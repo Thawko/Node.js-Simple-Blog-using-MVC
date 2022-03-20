@@ -1,0 +1,48 @@
+<section>
+  <a href="/admin/add">
+    <button class="float-right">
+      <i class="fa fa-add"> YENI GONDERI EKLE</i>
+    </button></a
+  >
+  <h1>Postlar</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Short</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% blogs.forEach(blog =>{%>
+      <tr>
+        <td><%=blog.title%></td>
+        <td><%=blog.short%></td>
+        <td>
+          <a class="del" data-doc="<%=blog._id%>"
+            ><i class="fa-solid fa-trash"></i
+          ></a>
+          <a href="/admin/edit/<%=blog._id%>"
+            ><i class="fa-solid fa-add"></i
+          ></a>
+        </td>
+      </tr>
+      <%})%>
+    </tbody>
+  </table>
+</section>
+<script>
+  const del = document.querySelectorAll("a.del");
+  const delLinks = [].slice.call(del);
+  delLinks.forEach((item, i) => {
+    item.addEventListener("click", (e) => {
+      const endpoint = "admin/delete/" + item.dataset.doc;
+      fetch(endpoint, {
+        method: "DELETE",
+      })
+        .then((response) => response.json())
+        .then((data) => (window.location.href = data.link))
+        .catch((err) => console.log(err));
+    });
+  });
+</script>

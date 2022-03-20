@@ -1,0 +1,221 @@
+.body-row {
+  width: 1170px;
+}
+#content-wrapper {
+  margin: 0 auto;
+  padding: 20px 0 40px;
+  overflow: hidden;
+}
+#main-wrapper {
+  float: left;
+  width: 68%;
+  max-width: 800px;
+}
+.top-bar {
+  background: #3d3d3d;
+}
+.top-bar-wrapper {
+  position: relative;
+  min-height: 40px;
+  color: #aaaaaa;
+  margin: 0 auto;
+}
+.top-bar-menu {
+  float: right;
+}
+.top-menu ul {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.top-menu ul li {
+  float: left;
+  list-style: none;
+  padding: 0;
+}
+.top-menu ul li a {
+  padding: 10px 16px;
+  display: block;
+  border: none !important;
+  text-decoration: none;
+  line-height: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #eeeeee;
+  text-transform: capitalize;
+}
+.top-menu ul li a:hover {
+  color: #ffcd0e;
+}
+#header-wrappers {
+  color: #fff;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+.headerleft .description {
+  color: #666;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  text-align: right;
+  text-indent: 0;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.headerleft {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  text-align: center;
+}
+#header-inner {
+  display: inline-block;
+}
+article {
+  padding: 0;
+  overflow: hidden;
+}
+.post-outer {
+  padding: 0 0 20px 0;
+}
+.post {
+  display: block;
+  overflow: hidden;
+  word-wrap: break-word;
+  background: #ffffff;
+}
+.item .post-head {
+  position: relative;
+  margin: 10px 0;
+  border-bottom: 2px solid #eee;
+}
+.post-head h1 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  border-bottom: 2px solid #555;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.index .post h2,
+.archive .post h2 {
+  margin-bottom: 12px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.index .post h2 a,
+.archive .post h2 a {
+  color: #000;
+}
+.index .post h2,
+.archive .post h2 {
+  margin: 0 0 10px;
+  padding: 0;
+}
+.index .post h2:hover a,
+.archive .post h2:hover a {
+  color: #ffcd0e;
+}
+.retitle h2 {
+  margin: 8px 0;
+  display: block;
+}
+.post-body {
+  margin: 0px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  box-sizing: border-box;
+}
+.post-home-image {
+  float: left;
+  width: 270px;
+  height: auto;
+  margin-right: 20px;
+  position: relative;
+}
+.post-home-image .post-thumb {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.post-home-image .post-thumb a {
+  width: 100%;
+  height: 160px;
+  display: block;
+  transition: all 0.3s ease-out !important;
+  -webkit-transition: all 0.3s ease-out !important;
+  -moz-transition: all 0.3s ease-out !important;
+  -o-transition: all 0.3s ease-out !important;
+}
+.index .post-labels,
+.archive .post-labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 12px 6px;
+  background: #ffcd0e;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  z-index: 9;
+}
+.date-header {
+  color: #bdbdbd;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0 !important;
+  padding: 0;
+}
+.date-header a {
+  color: #bdbdbd;
+}
+.post-header {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.post-thumb:hover a {
+  transform: scale(1.1) rotate(-1deg);
+  transition: all 0.3s ease-in-out;
+}
+.post-thumb a {
+  transition: all 0.3s ease-in-out;
+}
+#meta-post {
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 5px 0;
+}
+.post-meta {
+  color: #bdbdbd;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+.post-meta a,
+.post-meta i {
+  color: #cbcbcb;
+}
+.post-timestamp {
+  margin-left: 5px;
+}
+.resumo {
+  color: #333;
+  margin-bottom: 10px;
+}
+section {
+  max-width: 900px;
+  margin: 40px auto;
+}

@@ -1,0 +1,9 @@
+<div class="body-row" id="content-wrapper">
+  <div id="main-wrapper">
+    <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+        <% blogs.forEach(blog =>{%> <%-include('./blog',{blog: blog})%> <%})%>
+      </div>
+    </div>
+  </div>
+</div>

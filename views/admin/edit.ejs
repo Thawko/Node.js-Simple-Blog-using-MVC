@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-center">
+    <form action="/admin/edit/<%=blog._id%>" method="post">
+      <div class="form-group">
+        <div>
+          <input
+              type="text"
+              class="form-control"
+              name="title"
+              value="<%=blog.title%>"
+          />
+        </div>
+      <div class="form-group">
+        <div>
+          <input
+                type="text"
+                class="form-control"
+                name="short"
+                value="<%=blog.short%>"
+          />
+        </div>
+      <div class="form-group">
+        <div>
+          <input
+                  type="text"
+                  class="form-control"
+                  name="long"
+                  value="<%=blog.long%>"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Ekle</button>
+    </form>
+</div>

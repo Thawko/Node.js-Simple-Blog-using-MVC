@@ -1,0 +1,54 @@
+<div class="blog-posts hfeed">
+  <div class="date-outer">
+    <div class="date-posts">
+      <div class="post-outer">
+        <div class="post hentry">
+          <div class="post-home-image">
+            <span class="post-labels">
+              <%=blog.createdAt.toString().substring(4,10)%>
+            </span>
+            <div class="post-thumb">
+              <a
+                href="/blog/<%=blog._id%>"
+                style="
+                  background: url(https://4.bp.blogspot.com/-BlBi18JGkEA/Vupbk40a0UI/AAAAAAAADXk/rydm_x2vsJURxIq763HgLebaYXvmhrnQA/s72-c/person-731479_960_720.jpg)
+                    no-repeat center center;
+                  background-size: cover;
+                "
+              ></a>
+            </div>
+          </div>
+          <div class="post-header"></div>
+          <article>
+            <font class="retitle">
+              <h2 class="post-title entry-title">
+                <a href="/blog/<%=blog._id%>">
+                  <%=blog.title%>
+                </a>
+              </h2>
+            </font>
+            <div style="clear: both"></div>
+            <div class="date-header">
+              <div class="resumo">
+                <span><%=blog.short%></span>
+              </div>
+              <div style="clear: both"></div>
+              <div id="meta-post">
+                <i class="fa fa-pencil"></i>
+                <span itemprop="name">Berkay Özbay</span>
+                <i
+                  aria-hidden="true"
+                  class="fa fa-ellipsis-h"
+                  style="font-size: 8px; margin: 0 5px"
+                ></i>
+                <i class="fa fa-calendar"></i>
+                <abbr><%=blog.createdAt.toString().substring(16,21)%></abbr
+              </div>
+              <div style="clear: both"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

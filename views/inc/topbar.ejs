@@ -1,0 +1,39 @@
+<div class="top-bar">
+  <div class="top-bar-wrapper body-row">
+    <div class="top-bar-menu">
+      <div class="top-menu">
+        <div class="top-menu section" id="top-menu">
+          <div class="widget LinkList" data-version="1" id="LinkList940">
+            <div class="widget-content">
+              <ul>
+                <li itemprop="name">
+                  <a href="/" itemprop="url">Anasayfa</a>
+                </li>
+                <li itemprop="name">
+                  <a href="/about">Hakkımızda</a>
+                </li>
+                <% if(user) { %>
+                <li itemprop="name"><a href="/logout">Çıkış</a></li>
+                <% }else { %>
+                <li itemprop="name"><a href="/login">Giriş</a></li>
+                <% } %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="clear: both"></div>
+<div class="header-wrap">
+  <div class="body-row" id="header-wrappers">
+    <div class="headerleft">
+      <div id="header-inner">
+        <div class="descriptionwrapper">
+          <p class="description"><%=title%></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
